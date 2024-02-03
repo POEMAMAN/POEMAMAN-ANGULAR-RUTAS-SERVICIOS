@@ -1,0 +1,11 @@
+<div>
+    <form (ngSubmit)="handleForm()">
+        <label for="nombre">Nombre:</label>
+    <input name="nombre"[(ngModel)]="usuario" placeholder="ingrese nombre" id="usuario">
+    <label for="email" >Email:</label>
+    <input name="email" [(ngModel)]="email" placeholder="ingrese email" id="email">
+    <button type="submit">Enviar usuario</button>
+    <!-- el boton siempre dentro del ambito, sino no funciona -->
+    </form>
+</div>
+<!-- el ngModel lo hace bidereccional, porque se puede asignar un valor de inicio y recibir datos -->
