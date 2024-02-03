@@ -10,6 +10,8 @@ import { ErrorComponent } from './components/error/error.component';
 import { FormComponent } from './components/form/form.component';
 import { VistaUsuarioComponent } from './components/vista-usuario/vista-usuario.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CharactersComponent } from './components/characters/characters.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { FormsModule } from '@angular/forms';
     ErrorComponent,
     FormComponent,
     VistaUsuarioComponent,
-    FormComponent
+    FormComponent,
+    CharactersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
